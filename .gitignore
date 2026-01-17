@@ -27,3 +27,9 @@ venv/
 # Temporary files
 *.tmp
 *.temp
+
+# Claude workflow (local only)
+CLAUDE.md
+.claude/
+reference/
+tasks/

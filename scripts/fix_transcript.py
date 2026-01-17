@@ -54,6 +54,19 @@ REPLACEMENTS = [
     ("aquatically", "aquatically"),
     ("equatically", "aquatically"),
 
+    # If You Prefer a Milder Comedian (2010)
+    ("Caffeine Arrow", "Caffe Nero"),
+    ("blind space", "blank space"),
+
+    # Carpet Remnant World (2012)
+    ("carpet-rendered world", "Carpet Remnant World"),
+
+    # S02E01 Charity
+    ("Free credit", "free crisps"),
+    ("brick pop", "Britpop"),
+    ("crisp spender", "crisps bender"),
+    ("Sumatra Narangutans", "Sumatran orangutans"),
+
     # s03e01 Shilbottle specific
     ("KKnave", "Knave"),  # fix double-K from cascading replacements
     ("Naive magazine", "Knave magazine"),
