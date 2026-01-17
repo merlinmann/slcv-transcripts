@@ -70,12 +70,6 @@ slcv-transcripts/
 └── media/                  # Your video/audio files (not in repo)
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Add new corrections to `fix_transcript.py` with a comment noting the episode context
-3. Submit a pull request
-
 ## Disclaimer
 
 Stewart Lee's Comedy Vehicle is owned by the BBC. This repository contains only tools for personal transcription work. Support the official release.
