@@ -61,6 +61,10 @@ REPLACEMENTS = [
     # Carpet Remnant World (2012)
     ("carpet-rendered world", "Carpet Remnant World"),
 
+    # S02E04 Stand-Up
+    ("Pallava", "Palaver"),
+    ("Daleg", "Dalek"),
+
     # S02E01 Charity
     ("Free credit", "free crisps"),
     ("brick pop", "Britpop"),
