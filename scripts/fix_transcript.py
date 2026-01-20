@@ -239,6 +239,7 @@ REPLACEMENTS = [
 
     # Other proper nouns
     ("Stuart Lee", "Stewart Lee"),
+    ("Sewart Lee", "Stewart Lee"),
     ("Nigel Frange", "Nigel Farage"),
     ("Jeremy Kahn", "Jeremy Kyle"),
     ("Jeremy Carl", "Jeremy Kyle"),
@@ -272,6 +273,10 @@ REPLACEMENTS = [
 
 # Regex-based replacements for more complex patterns
 REGEX_REPLACEMENTS = [
+    # Fix Whisper sanitizing profanity
+    (r'\bfucking cuts\b', 'fucking cunts'),
+    (r'\bnor a cut\b', 'nor a cunt'),
+
     # Fix "football hooker" -> "football hooligan" (context-aware)
     (r'\bfootball\s+hooker\b', 'football hooligan'),
     (r'\bfootballer\s+hooker\b', 'football hooligan'),
@@ -385,10 +390,16 @@ def main():
             fixed = fix_transcript(text)
             if text != fixed:
                 print(f"\n=== Changes for {f.name} ===")
-                # Show a few example changes
-                for wrong, correct in REPLACEMENTS[:10]:
-                    if wrong.lower() in text.lower() and wrong.lower() not in fixed.lower():
-                        print(f"  '{wrong}' -> '{correct}'")
+                # Show all replacements that were applied
+                for wrong, correct in REPLACEMENTS:
+                    if wrong.lower() == correct.lower():
+                        continue
+                    pattern = re.compile(r'\b' + re.escape(wrong) + r'\b', re.IGNORECASE)
+                    matches = pattern.findall(text)
+                    if matches:
+                        print(f"  '{wrong}' -> '{correct}' ({len(matches)}x)")
+            else:
+                print(f"\n=== No changes for {f.name} ===")
     else:
         for f in input_files:
             process_file(f, args.output, args.in_place)
