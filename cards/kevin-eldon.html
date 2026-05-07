@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kevin Eldon — Engagement Card</title>
+<style>
+@font-face { font-family: "Equity A"; src: local("Equity Text A"), url("https://bucket.contiguous.me/fonts/equity-text-a-regular.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Equity A"; src: local("Equity Text A Italic"), url("https://bucket.contiguous.me/fonts/equity-text-a-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Equity Caps"; src: local("Equity Caps A"), url("https://bucket.contiguous.me/fonts/equity-caps-a-regular.woff2") format("woff2"); }
+@font-face { font-family: "Concourse 4"; src: local("Concourse T4"), url("https://bucket.contiguous.me/fonts/concourse-t4-regular.woff2") format("woff2"); }
+@font-face { font-family: "Triplicate"; src: local("Triplicate T4 Code"), url("https://bucket.contiguous.me/fonts/triplicate-t4-code-regular.woff2") format("woff2"); }
+
+:root {
+  --moss: #2d5a3a;
+  --amber: #c8911f;
+  --tobacco: #8a5a2b;
+  --paper: #f9f5ec;
+  --ink: #1a1a1a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--paper); }
+
+.card {
+  width: 1080px;
+  height: 1080px;
+  padding: 80px 88px 88px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Equity A", Georgia, serif;
+  font-feature-settings: "liga", "kern", "onum";
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 56px; left: 88px; right: 88px;
+  height: 5px;
+  background: var(--moss);
+}
+
+.verdict {
+  font-family: "Equity A", Georgia, serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--moss);
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+.subhead {
+  font-family: "Equity A", Georgia, serif;
+  font-style: italic;
+  font-size: 36px;
+  color: var(--tobacco);
+  margin-top: 28px;
+}
+
+.bullets {
+  list-style: none;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bullets li {
+  font-size: 36px;
+  line-height: 1.32;
+  padding-left: 44px;
+  position: relative;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 18px;
+  height: 18px;
+  background: var(--amber);
+  border-radius: 50%;
+}
+
+.sig {
+  margin-top: auto;
+  padding-top: 40px;
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tobacco);
+  text-align: right;
+}
+
+.sig::before { content: "— "; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1 class="verdict">Kevin Eldon is Lee's secret weapon.</h1>
+  <p class="subhead">The problem solver. The one he calls when a joke won't land.</p>
+
+  <ul class="bullets">
+    <li>Lee always calls him "the Actor Kevin Eldon" — a running tag he and Richard Herring started on purpose, and Lee has never stopped.</li>
+    <li>In his book, Lee tells a story about a woollen-item bit that wouldn't work. Eldon listened once, diagnosed the logic flaw in a sentence, and handed him the fix.</li>
+    <li>Eldon has been in the room since 1989 — Oranje Boom Boom above a Soho pub — and keeps showing up: Cluub Zarathustra, the tours, the late-night drives to Skye for thirty people.</li>
+  </ul>
+
+  <p class="sig">Merlin Mann · 2026</p>
+</div>
+
+</body>
+</html>

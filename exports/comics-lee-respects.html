@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Five Comedians Stewart Lee Doesn't Hate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face { font-family: "Equity A"; src: local("Equity Text A"), url("https://bucket.contiguous.me/fonts/equity-text-a-regular.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Equity A"; src: local("Equity Text A Italic"), url("https://bucket.contiguous.me/fonts/equity-text-a-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Equity Caps"; src: local("Equity Caps A"), url("https://bucket.contiguous.me/fonts/equity-caps-a-regular.woff2") format("woff2"); }
+@font-face { font-family: "Concourse 4"; src: local("Concourse T4"), url("https://bucket.contiguous.me/fonts/concourse-t4-regular.woff2") format("woff2"); }
+
+:root {
+  --moss: #2d5a3a;
+  --amber: #c8911f;
+  --tobacco: #8a5a2b;
+  --paper: #f9f5ec;
+  --ink: #1a1a1a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Equity A", Georgia, serif;
+  font-feature-settings: "liga", "kern", "onum";
+  line-height: 1.5;
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 80px 28px 120px;
+}
+
+.eyebrow {
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--tobacco);
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--moss);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.dek {
+  font-size: 24px;
+  font-style: italic;
+  color: var(--tobacco);
+  margin-bottom: 44px;
+  max-width: 640px;
+}
+
+.pullquote {
+  border-left: 4px solid var(--amber);
+  padding: 16px 0 16px 26px;
+  margin: 48px 0 64px;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.pullquote .att {
+  display: block;
+  margin-top: 12px;
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tobacco);
+  font-style: normal;
+}
+
+.intro {
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 64px;
+  max-width: 680px;
+}
+
+.intro p + p { margin-top: 16px; }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.c {
+  border-top: 4px solid var(--moss);
+  padding-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+}
+
+.c .verdict {
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--moss);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+
+.c .sub {
+  font-style: italic;
+  color: var(--tobacco);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.c .why {
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 620px;
+  margin-bottom: 16px;
+}
+
+.c .link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--moss);
+  text-decoration: none;
+  border-bottom: 2px solid var(--amber);
+  padding-bottom: 2px;
+}
+
+.c .link:hover { color: var(--amber); }
+
+.num {
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  color: var(--tobacco);
+  padding-top: 10px;
+}
+
+.sig {
+  margin-top: 96px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(138,90,43,0.3);
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tobacco);
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 48px; }
+  .c { grid-template-columns: 1fr; }
+  .num { padding-top: 0; }
+  .c .verdict { font-size: 32px; }
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">A portfolio · Assembled from the corpus</div>
+  <h1>Five Comedians Stewart Lee Doesn't Hate.</h1>
+  <p class="dek">Pulled from the book, the TV shows, and every standup special I could get my hands on.</p>
+
+  <div class="pullquote">
+    "If the crowd gets behind you, you are facing the wrong way."
+    <span class="att">— Simon Munnery, quoted by Stewart Lee in <em>How I Escaped My Certain Fate</em></span>
+  </div>
+
+  <div class="intro">
+    <p>Stewart Lee hates a lot of comedians. He has names. He has lists. He writes books about them. He stands on stages in front of paying crowds and describes his contempt for the profession as a whole, in detail, for two hours at a time.</p>
+    <p>These five, he doesn't hate. He built his life around them.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="c">
+      <div>
+        <h2 class="verdict">Ted Chippington made Stewart Lee.</h2>
+        <p class="sub">One gig in Birmingham, 1984. Everything after.</p>
+        <p class="why">Sixteen-year-old Lee watched Ted open for The Fall — a Teddy Boy telling the same joke, in the same flat Midlands monotone, until the form itself came apart. Lee decided that night that stand-up could be anything. He dedicated his book to Ted.</p>
+        <a class="link" href="comic-ted-chippington.html">Every mention →</a>
+      </div>
+      <div class="num">01</div>
+    </div>
+
+    <div class="c">
+      <div>
+        <h2 class="verdict">Chris Morris is his creative peer.</h2>
+        <p class="sub">The shadowy satirist. The only interviewer who could sit across from him.</p>
+        <p class="why">For two full seasons of <em>Stewart Lee's Comedy Vehicle</em>, Morris plays the on-screen interrogator. He doesn't lob softballs. He asks Lee if he's shitting on his own doorstep, if he sounds like a mad old pope, if he's a traffic warden for laughter. Lee brightens every time.</p>
+        <a class="link" href="comic-chris-morris.html">Every mention →</a>
+      </div>
+      <div class="num">02</div>
+    </div>
+
+    <div class="c">
+      <div>
+        <h2 class="verdict">Richard Herring is complicated and essential.</h2>
+        <p class="sub">Writing partner since 1986. Still the best foil.</p>
+        <p class="why">They met at Oxford, shared a flat in Acton, did temp work, and wrote comedy together. Half Lee's on-stage vocabulary — "vain," "humble," "moon on a stick" — is Herring's. In <em>Basic Lee</em> (2024) he stops a routine mid-sentence to insist, unprompted, that Richard Herring's podcast is good.</p>
+        <a class="link" href="comic-richard-herring.html">Every mention →</a>
+      </div>
+      <div class="num">03</div>
+    </div>
+
+    <div class="c">
+      <div>
+        <h2 class="verdict">Simon Munnery is the comedy genius.</h2>
+        <p class="sub">Lee's word, not mine. Used more than once.</p>
+        <p class="why">Lee calls him "legendary," "always apposite," and just plain "the comedy genius." They ran Cluub Zarathustra, a mid-nineties Dadaist cabaret so hostile that Munnery once built an anti-audience weapon called the CUNT Ray. Lee admits most of his best bits are Munnery's.</p>
+        <a class="link" href="comic-simon-munnery.html">Every mention →</a>
+      </div>
+      <div class="num">04</div>
+    </div>
+
+    <div class="c">
+      <div>
+        <h2 class="verdict">Kevin Eldon is Lee's secret weapon.</h2>
+        <p class="sub">The problem solver. The one he calls when a joke won't land.</p>
+        <p class="why">Lee and Herring always call him "the Actor Kevin Eldon." He's been in the room since 1989. In the book, Lee tells a story about a bit about woollen items that wouldn't work — Eldon listened once, diagnosed the logic flaw in a sentence, and handed him the fix.</p>
+        <a class="link" href="comic-kevin-eldon.html">Every mention →</a>
+      </div>
+      <div class="num">05</div>
+    </div>
+
+  </div>
+
+  <p class="sig">— Merlin Mann · 2026</p>
+</main>
+</body>
+</html>

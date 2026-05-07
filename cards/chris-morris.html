@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chris Morris — Engagement Card</title>
+<style>
+@font-face { font-family: "Equity A"; src: local("Equity Text A"), url("https://bucket.contiguous.me/fonts/equity-text-a-regular.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Equity A"; src: local("Equity Text A Italic"), url("https://bucket.contiguous.me/fonts/equity-text-a-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Equity Caps"; src: local("Equity Caps A"), url("https://bucket.contiguous.me/fonts/equity-caps-a-regular.woff2") format("woff2"); }
+@font-face { font-family: "Concourse 4"; src: local("Concourse T4"), url("https://bucket.contiguous.me/fonts/concourse-t4-regular.woff2") format("woff2"); }
+@font-face { font-family: "Triplicate"; src: local("Triplicate T4 Code"), url("https://bucket.contiguous.me/fonts/triplicate-t4-code-regular.woff2") format("woff2"); }
+
+:root {
+  --moss: #2d5a3a;
+  --amber: #c8911f;
+  --tobacco: #8a5a2b;
+  --paper: #f9f5ec;
+  --ink: #1a1a1a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--paper); }
+
+.card {
+  width: 1080px;
+  height: 1080px;
+  padding: 80px 88px 88px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Equity A", Georgia, serif;
+  font-feature-settings: "liga", "kern", "onum";
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 56px; left: 88px; right: 88px;
+  height: 5px;
+  background: var(--moss);
+}
+
+.verdict {
+  font-family: "Equity A", Georgia, serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--moss);
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+.subhead {
+  font-family: "Equity A", Georgia, serif;
+  font-style: italic;
+  font-size: 40px;
+  color: var(--tobacco);
+  margin-top: 28px;
+}
+
+.bullets {
+  list-style: none;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bullets li {
+  font-size: 36px;
+  line-height: 1.32;
+  padding-left: 44px;
+  position: relative;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 18px;
+  height: 18px;
+  background: var(--amber);
+  border-radius: 50%;
+}
+
+.sig {
+  margin-top: auto;
+  padding-top: 40px;
+  font-family: "Concourse 4", system-ui, sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tobacco);
+  text-align: right;
+}
+
+.sig::before { content: "— "; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1 class="verdict">Chris Morris is his creative peer.</h1>
+  <p class="subhead">The shadowy satirist. The only interviewer who could sit across from him.</p>
+
+  <ul class="bullets">
+    <li>When the BBC let Lee hire a fake interviewer to frame his stand-up on TV, he picked Morris — twice — for two full seasons of <em>Stewart Lee's Comedy Vehicle</em>.</li>
+    <li>Morris doesn't lob softballs. He asks Lee if he's shitting on his own doorstep, if he sounds like a mad old pope, if he's just a traffic warden for laughter. Lee brightens every time.</li>
+    <li>In the book, Lee calls Morris "the shadowy satirist" and credits him with planting "infant" — one of the great comedy words.</li>
+  </ul>
+
+  <p class="sig">Merlin Mann · 2026</p>
+</div>
+
+</body>
+</html>
